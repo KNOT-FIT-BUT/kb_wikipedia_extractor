@@ -179,15 +179,16 @@ class WikiExtract(object):
 			if self.dump is None and dump_file_mask == PAGES_DUMP_FPATH:
 				# Get real file path from possible file link - main file is pages dump
 				# (due to missing latest link on some files + prevention of bad links of other files)
-				split_by = '-'
-				real_dump_file_parts = os.readlink(
-					self._get_absolute_path(dump_file)
-				).split(split_by)
-				dump_file_parts = dump_file.rsplit('/')[-1].split(split_by)
-				for x, y in zip(dump_file_parts, real_dump_file_parts):
-					if x == self.console_args.dump:
-						self.dump = y
-						break
+				if os.path.islink(self._get_absolute_path(dump_file)):
+					split_by = '-'
+					real_dump_file_parts = os.readlink(
+						self._get_absolute_path(dump_file)
+					).split(split_by)
+					dump_file_parts = dump_file.rsplit('/')[-1].split(split_by)
+					for x, y in zip(dump_file_parts, real_dump_file_parts):
+						if x == self.console_args.dump:
+							self.dump = y
+							break
 		return self._get_absolute_path(dump_file)
 
 	def _get_absolute_path(self, dump_file: str) -> str:
