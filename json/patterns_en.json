@@ -1,0 +1,183 @@
+{
+	"keywords": {
+		"disambig_pattern": "{{[^}]*?(?:disambiguation|disambig|dab)(?:\\|[^}]*?)?}}",
+		"category_pattern": "\\[\\[Category:\\s?(.*?)\\]\\]",
+		"sentence": ["was", "is", "are", "were"],
+		"image": ["image", "photo", "image_name", "image_flag", "image_coat", "image_map", "map_image", "logo"],
+		"area_km2": ["area_km2", "area_total_km2"],
+		"area_sqmi": ["area_sq_mi", "area_total_sq_mi"],
+		"area_other": ["area", "basin_size"],
+		"population": ["population", "population_total", "population_estimate", "population_census"],
+		"lang_alias_patterns": [
+			"\\{\\{(?:lang|spell)-([^\\|]+?)(?:-.*?)?\\|([^\\|]+?)(?:\\|.*?)?\\}\\}",
+			"\\{\\{lang\\|([^\\|]+?)(?:-.*?)?\\|([^\\|]+?)(?:\\|.*?)?\\}\\}",
+			"\\{\\{(zh)\\|(?:[^\\|]*?=)?([^\\|]+?)(?:\\|.*?)?\\}\\}",
+			"\\{\\{(Korean)\\|(?:[^\\|]*?=)?([^\\|]+?)(?:\\|.*?)?\\}\\}"
+		],
+		"native_name_lang": "native_name_lang",
+		"native_name": ["nativename", "native_name"],
+		"infobox_name": ["name", "subject_name", "birth_name", "birthname", "common_name", "conventional_long_name"],
+		"infobox_names": ["other_names", "name_other", "nickname", "nicknames", "alias", "aliases"],
+		"height": "height",
+		"birth_place":	"birth_place",
+		"death_place": 	"death_place",
+		"gender": 		"gender",
+		"male": 		["male"],
+		"female": 		["female", "women"],
+		"jobs":			"occupation",
+		"nationality":	"nationality",
+		"country": "subdivision_name",
+		"source": "source1_location",
+		"streamflow": "discharge1_avg",
+		"length": "length",
+		"type": "type"
+	},
+	"identification": {
+		"person": {
+			"categories": [
+				"\\bbirths\\b",
+				"\\bdeaths\\b",
+				"\\b(wo)?men\\b",
+				"fictional.*?characters",
+				"comics?.*?characters",
+				"living people",
+				"groups of"				
+			],
+			"!categories": [
+				"\\d+.*?television series"
+			],
+			"names": [
+				"person",
+				"comics character",
+				"character",
+				"soap character"
+			],
+			"!names": [
+				"television",
+				"film"
+			],
+			"titles": [
+				"gang"
+			],
+			"fields": [
+				"birth_date",
+				"death_date",
+				"gender",
+				"birth_place",
+				"death_place",
+				"nationality"
+			]
+		},
+		"country": {
+			"categories": [
+				"Countries\\s+in\\s+(?:Europe|Africa|Asia|Australia|Oceania|(?:South|North)\\s+America)",
+				"Member\\s+states\\s+of\\s+(?:the\\sUnited\\sNations|the\\sCommonwealth\\sof\\sNations|the\\sEuropean\\sUnion|NATO)",
+				"States\\s+(?:of\\sthe\\sUnited\\sStates|with\\slimited\\srecognition)",
+				"States\\s+(?:of\\sthe\\sUnited\\sStates|with\\slimited\\srecognition)",
+				".*?former.*?countries.*?",
+				"countries and territories",
+				"States and territories",
+				"member states",
+				"nations"
+			],
+			"names": [],
+			"titles": [],
+			"fields": []
+		},
+		"event": {
+			"categories": [
+				"(?:^|\\s)(?<!based on actual )(?<!about impact )(?<!Endosymbiotic )events?(\\s|$)"
+			],
+			"names": [],
+			"titles": [],
+			"fields": [
+				"election_date",
+				"host_city",
+				"affected",
+				"site"
+			]
+		},
+		"organisation": {
+			"categories": [
+				"(?:^|\\s)(?:organizations?|organized crime (?:gangs|groups)|compan(?:y|ies))(\\s|$)"
+			],
+			"names": [
+				"company"
+			],
+			"!names": [
+				"television",
+				"film"
+			],
+			"titles": [],
+			"fields": []
+		},
+		"settlement": {
+			"categories": [
+				"\\s?(?:cities|towns|villages|.*?populated\\splaces).*?"
+			],
+			"names": [
+				"settlement"
+			],
+			"titles": [
+				"county"
+			],
+			"fields": []
+		},
+		"watercourse": {
+			"categories": [
+				"rivers of"
+			],
+			"names": [
+				"river"
+			],
+			"!names": [
+				"project",
+				"song"
+			],
+			"titles": [
+				"river", 
+				"brook", 
+				"creek", 
+				"stream"
+			],
+			"fields": [
+				"source1_coordinates",
+				"basin_size",
+				"discharge1_avg",
+				"source1_location"
+			]
+		},
+		"waterarea": {
+			"categories": [],
+			"names": [
+				"body\\sof\\swater",
+				"sea",
+				"lake"
+			],
+			"titles": [
+				"lake",
+				"loch"
+			],
+			"fields": []
+		},
+		"geo": {
+			"categories": [
+				"mountain ranges",
+				"mountains",
+				"waterfalls",
+				"islands",
+				"atolls",
+				"peninsulas"
+			],
+			"names": [
+				"waterfall", 
+				"(island)s?", 
+				"mountain",
+				"(peninsula)s?",
+				"continent"
+			],
+			"titles": [],
+			"fields": []
+		}
+	}	
+}

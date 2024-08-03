@@ -1,0 +1,31 @@
+# inputs
+wiki_stats
+
+# generated python files
+**/__pycache__
+**/*.pyc
+
+# generated custom files
+entities_processing.log
+languages.json
+**/start.sh.stdout
+**/start.sh.stderr
+**/start.sh.stdmix
+
+# outputs
+outputs
+**/HEAD-KB
+**/VERSION
+**/KBstatsMetrics.all
+**/kb
+
+**/langmap.json
+kb_real
+push.sh
+metrics/bad_lines.log
+log
+
+testing_data/
+old/
+test/
+html/

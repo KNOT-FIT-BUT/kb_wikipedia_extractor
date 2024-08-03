@@ -1,0 +1,162 @@
+{
+	"keywords": {
+		"disambig_pattern": "{{[^}]*?(?:rozcestník)(?:\\|[^}]*?)?}}",
+		"category_pattern": "\\[\\[Kategorie:\\s?(.*?)\\]\\]",
+		"sentence":		["je", "jsou", "byl", "byla", "byli", "byly"],
+		"image": 		["obrázek", "vlajka", "znak", "mapa umístění", "mapa_umítění", "mapa", "logo"],
+		"area_km2": 	["rozloha", "výměra", "plocha"],
+		"area_sqmi": 	"",
+		"area_other": 	"",
+		"population": 	["počet obyvatel", "počet_obyvatel", "pocet obyvatel", "pocet_obyvatel"],
+		"lang_alias_patterns": [
+			"\\{\\{vjazyce\\|([^{]+?)\\}\\}\\s'{2}(.+?)'{2}",
+			"'{0,3}\\{\\{(?:vjazyce2|cizojazyčně)\\|([^\\|]+)\\|'{0,2}(.+?)'{0,2}\\}\\}'{0,3}"
+		],
+		"native_name_lang": ["iso2", "iso3"],
+		"native_name": "úřední název",
+		"infobox_name": ["chrámové jméno", "posmrtné jméno", "pseudonym", "rodné jméno", "úplné jméno"],
+		"infobox_names": ["jinak zvaný", "jiná jména"],
+		"height": ["celková výška", "celková_výška"],
+		"birth_place": 	["místo narození", "místo_narození"],
+		"death_place": 	["místo úmrtí", "místo_úmrtí"],
+		"gender": 		"pohlaví",
+		"male": 		["muž", "muži"],
+		"female": 		["žena", "ženy"],
+		"jobs":			["profese", "zaměstnání", "povolání"],
+		"nationality":	"národnost",
+		"country": ["země", "stát"],
+		"source": "pramen",
+		"streamflow": "průtok",
+		"length": "délka"
+	},
+	"identification": {
+		"person": {
+			"categories": [
+				"narození",
+				"úmrtí",
+				"muži",
+				"ženy",
+				"transsexuálové",
+				"možná\\s+žijící\\s+lidé",
+				"hrdinové\\s+a\\s+postavy\\s+řecké\\s+mytologie",
+				"bohové",
+				"postavy"
+			],
+			"names": [
+				"osoba",
+				"spisovatel",
+				"filosof"
+			],
+			"titles": [],
+			"fields": [
+				"místo narození",
+				"místo úmrtí",
+				"povolání",
+				"národnost"
+			]
+		},
+		"country": {
+			"categories": [
+				"Státy\\s+(?:Afriky|Asie|Austrálie\\s+a\\s+Oceánie|Evropy|(?:Severní|Jižní)\\s+Ameriky)",
+				"Státy\\s+(?:NATO|EU|Commonwealthu)",
+				"Státy\\s+s\\s+žádným\\s+nebo\\s+částečným\\s+mezinárodním\\s+uznáním",
+				"(?:Krátce\\s+existující\\s+státy|Zaniklé\\s+(?:státy|monarchie))"
+			],
+			"names": [
+				"stát",
+				"region",
+				"stát USA"
+			],
+			"titles": [],
+			"fields": []
+		},
+		"settlement": {
+			"categories": [
+				"města\\s+(?:na|ve?)",
+				"obce\\s+(?:na|ve?)"
+			],
+			"names": [
+				"sídlo",
+				"česká\\s+obec",
+				"katastrální\\s+území\\s+Prahy",
+				"statutární\\s+město",
+				"anglické\\s+město"
+			],
+			"titles": [
+				"obec",
+				"obc",
+				"měst",
+				"metro",
+				"sídel",
+				"sídl",
+				"komun",
+				"muze",
+				"místo",
+				"vesnic"
+			],
+			"fields": []
+		},
+		"waterarea": {
+			"categories": [
+				"rybníky\\s+(?:na|ve?)", 
+				"jezera\\s+(?:na|ve?)", 
+				"říční\\s+jezera\\s+(?:na|ve?)"
+			],
+			"names": [
+				"vodní\\s+plocha",
+				"moře",
+				"oceány"
+			],
+			"titles": [
+				"rybník",
+				"jezero",
+				"moře",
+				"oceán",
+				"tůň"
+			],
+			"fields": []
+		},
+		"watercourse": {
+			"categories": [
+				"potoky\\s+(?:na|ve?)",
+				"řeky\\s+(?:na|ve?)"
+			],
+			"names": [
+				"vodní\\s+tok"
+			],
+			"titles": [
+				"bystřina", 
+				"potok", 
+				"říčka", 
+				"řeka",
+				"veletok",
+				"průtok"
+			],
+			"fields": []
+		},
+		"geo": {
+			"categories": [
+				"poloostrovy\\s+(?:na|ve?)"
+			],
+			"names": [
+				"reliéf", 
+				"hora", 
+				"průsmyk",
+				"vodopád",
+				"ostrov",
+				"kontinent"
+			],
+			"titles": [
+				"hora",
+				"pohoří",
+				"průsmyk",
+				"sedlo",
+				"vodopád",
+				"poloostrov",
+				"ostrov",
+				"kontinent"
+			],
+			"fields": []
+		}
+	}	
+}
